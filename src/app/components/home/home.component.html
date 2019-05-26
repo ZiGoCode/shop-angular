@@ -1,0 +1,61 @@
+<mat-toolbar color="warn">
+  My App
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <h3>Menu</h3>
+    <a (click)="showFiller = !showFiller; showFiller1 = !showFiller1" [class.active]="activeteb === showFiller" mat-button>
+      Toggle extra text
+    </a>
+    <a (click)="showFiller1 = !showFiller1; showFiller = !showFiller" [class.active]="activeteb === showFiller1" mat-button>
+      Toggle extra text
+    </a>
+    <a (click)="showFiller" mat-button>
+      Toggle extra text
+    </a>
+    <br>
+    <a class="active1" [routerLink]="['/login']" mat-button>
+      Toggle extra text
+    </a>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <div *ngIf="showFiller">
+      <h2>สินค้าเพื่อคุณโดยเฉพาะ</h2>
+
+      <mat-grid-list cols="4">
+        <mat-grid-tile>
+          <div class="div-menu">
+            <div class="title-img">
+              <img src="https://suratsatp.files.wordpress.com/2014/12/557000010389301.jpeg" alt="">
+            </div>
+            <div class="title-text">
+              OIOP
+            </div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="div-menu">
+            <img src="https://suratsatp.files.wordpress.com/2014/12/557000010389301.jpeg" alt="">
+
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="div-menu">
+            <img src="https://suratsatp.files.wordpress.com/2014/12/557000010389301.jpeg" alt="">
+
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="div-menu">
+            <img src="https://suratsatp.files.wordpress.com/2014/12/557000010389301.jpeg" alt="">
+
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+    </div>
+  </div>
+
+</mat-drawer-container>

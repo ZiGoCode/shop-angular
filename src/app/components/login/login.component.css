@@ -1,0 +1,58 @@
+.bg{
+    background-color: #eee;
+    
+}
+.login-heder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    
+}
+
+.form-input{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+input{
+    margin-top: 5px;
+}
+
+.example-full-width {
+    width: 100%;
+}
+mat-card{
+    padding: 0;
+    width: 400px;
+}
+.example-button-row{
+    margin-top: 20px;
+    margin-bottom: 35px !important;
+    text-align: center;
+}
+
+button{
+    width: 50%;
+    height: 50px;
+}
+
+.logo-heder{
+    margin-left: 0;
+    margin-top: 40px !important;
+    margin-bottom: 20px;
+
+    padding-left: 50px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    border-left-style: solid;
+    border-left-color: coral; 
+}
